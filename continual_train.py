@@ -119,7 +119,7 @@ def main():
         trainer.train(epoch + 1, train_loaders[training_phase], optimizer, lr_scheduler, training_phase,
                       train_iters=150 if names[0] == 'viper' else len(train_loaders[training_phase]))
 
-        if epoch + 1 % 10 == 0:
+        if (epoch + 1) % 10 == 0:
             cmc, mAP = eval_func(epoch + 1, evaluators[training_phase], model,
                                  test_loaders[training_phase], names[training_phase])
 
@@ -143,7 +143,7 @@ def main():
         for epoch in range(0, args.epochs):
             trainer.train(epoch + 1, train_loaders[training_phase], optimizer, lr_scheduler, training_phase,
                           train_iters=len(train_loaders[training_phase]))
-            if epoch + 1 % 10 == 0:
+            if (epoch + 1) % 10 == 0:
                 cmc, mAP = eval_func(epoch + 1, evaluators[training_phase], model,
                                      test_loaders[training_phase], names[training_phase])
 
