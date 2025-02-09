@@ -109,16 +109,20 @@ Evaluation is conducted during training. It is worth noting that in our DASA fra
 
 More results can be found in our [paper](https://arxiv.org/abs/2405.19695). You can achieve similar results with the released code.
 
-## Citation (To be updated)
+## Citation
 
 Please cite the following paper in your publications if it helps your research:
 
 ```
-@article{wang2024distribution,
-  title={Distribution Aligned Semantics Adaption for Lifelong Person Re-Identification},
+@article{wang2025distribution,
+  title={Distribution aligned semantics adaption for lifelong person re-identification},
   author={Wang, Qizao and Qian, Xuelin and Li, Bin and Xue, Xiangyang},
-  journal={arXiv preprint arXiv:2405.19695},
-  year={2024}
+  journal={Machine Learning},
+  volume={114},
+  number={3},
+  pages={1--22},
+  year={2025},
+  publisher={Springer}
 }
 ```
 
